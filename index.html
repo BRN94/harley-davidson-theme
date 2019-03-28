@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<title>Project less and sass</title>	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+	<!-- Google fonts -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:400,400i" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,900|Oswald:400,700" rel="stylesheet">  
+	<!-- font-family: 'Open Sans', sans-serif; 
+	font-family: 'Lato', sans-serif; -->
+
+	<!-- bxSlider CSS file -->
+	<link rel="stylesheet" href="style/jquery.bxslider.css">
+
+	<!-- Owl-carousel -->
+	<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+
+	<!-- Animate css -->
+	<link rel="stylesheet" type="text/css" href="style/animate.css">
+
+	<!-- Style LESS -->
+	<link rel="stylesheet" href="style/main.css" type="text/css">
+
+	<!-- JS LESS -->
+	<script src="js/less.min.js" type="text/javascript"></script>
+
+	<!-- jQuery -->
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+	<!-- mobilne menu -->
+	<script src="js/jquery.slicknav.min.js"></script>
+
+	<!-- bxSlider Javascript file -->
+	<script src="js/jquery.bxslider.min.js"></script>
+
+	<!-- ImagesLoad -->
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+
+	<!-- Owl-carousel -->
+	<script src="owl-carousel/owl.carousel.min.js"></script>
+
+	<!-- CountTo -->
+	<script src="js/jquery.countTo.js"></script>
+
+	<!-- Viewport Checker -->
+	<script src="js/jquery.viewportchecker.js"></script>
+
+	<!-- YTPlayer -->
+	<script src="js/jquery.mb.YTPlayer.min.js"></script>
+
+</head>
+<body>
+
+	<!-- glowny kontener -->
+	<div id="main-container">
+
+		<!-- Navigation -->
+		<header>
+			<nav>
+				<div class="container">
+					<div class="navbar">
+						<div class="nav-logo">
+							<a href="#">BRN94</a>
+						</div>
+						<div class="main-menu-content">
+							<ul id="main-menu">
+								<li><a href="#" class="menu-link-active">Start</a></li>
+								<li><a href="#">O nas</a></li>
+								<li><a href="#">Warsztat</a></li>		
+								<li><a href="#">Certyfiakty</a></li>
+								<li><a href="#">Kontakt</a></li>
+								<li><a href="#"><i class="fas fa-search"></i></a></li>
+							</ul>
+						</div>
+						<!-- Menu mobile -->
+						<div id="attach-mobile-menu"></div>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+
+		<!-- Slider -->
+		<div class="top-slider">
+			<ul class="bxslider" id="main-slider">
+				<li>
+					<div class="main-slide-1">
+						<div class="container">
+							<div class="main-slider-content">
+								<h1 class="animated fadeInDown">Sprawdź nowy poziom obsługi klienta.</h1>
+								<p class="animated fadeInLeft">Nasze usługi realizujemy na najwyższym poziomie.</p>
+								<a href="" class="animated fadeInUp">Zobacz</a>
+								<!-- <img src="images/people.png" alt="" class="animated fadeInDown"> -->
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="main-slide-2">
+						<div class="container">
+							<div class="main-slider-content">
+								<h1 class="animated fadeInDown">Podróżuj bezpiecznie i pewnie</h1>
+								<p class="animated fadeInLeft">Sprawimy, że każda podróż motocyklem będzie dla Ciebie wyjątkowa.</p>
+								<a href="" class="animated fadeInUp">Zobacz</a>
+								<!-- <img src="images/responsive-devices.png" alt="" class="animated fadeInDown"> -->
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Our services -->
+		<div class="our-services">
+			<div class="container">
+				<div class="single-col" data-animate="fadeInLeft">
+					<span><i class="fas fa-address-card"></i></span>
+					<h3>Autoryzowany serwis</h3>
+					<p>Wszystkie części pochodzą ze sprawdzonych źródeł i są najwyższej jakości. Większość pochodzi z importu USA.</p>
+				</div>
+				<div class="single-col" data-animate="fadeInUp">
+					<span><i class="far fa-thumbs-up"></i></span>
+					<h3>100% pozytywnych opinii</h3>
+					<p>Walczymy o to, aby każdy klient był zadowolony z Naszych usług. Przyjdź i się przekonaj.</p>
+				</div>
+				<div class="single-col" data-animate="fadeInUp">
+					<span><i class="fas fa-file-invoice-dollar"></i></span>
+					<h3>Najniższa cena</h3>
+					<p>U nas nie ma żadnych niespodzianek, o wszystkim Ty decydujesz. Dodatkowo otrzymasz porady od najlepszych!</p>
+				</div>
+				<div class="single-col" data-animate="fadeInRight">
+					<span><i class="fas fa-globe-europe"></i></span>
+					<h3>Współpraca międzynarodowa </h3>
+					<p>Nie masz dostępu do części? spokojnie! współpracujemy z firmami zagranicznymi i sprowadzimy dla Ciebie część!</p>
+				</div>												
+			</div>
+		</div>
+
+		<!-- Section portfolio -->
+		<div class="portfolio">
+			
+			<!-- Title portfolio-->
+			<div class="section-title">
+				<div class="container" data-animate="bounceIn">
+					<h2>Nasze projekty</h2>
+					<p>Projekty wykonane przez Nas, są starannie wykonywane a części są najwyższej jakości. Wyróżnij się z tłumu!</p>
+				</div>
+			</div>
+
+			<!-- Slider portfolio -->
+			<div class="portfolio-slider">
+				<div class="container" data-animate="fadeIn">
+					<div id="portfolio-carousel" class="owl-carousel">
+						<div class="portfolio-item">
+							<img src="images/owl_slider/yamaha.jpg" alt="car-vintage-wheel-old-bike-vehicle">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-inner">
+									<h3>Yamaha SR 250 - Scrambler</h3>
+									<p>Użyte technologie:</p>
+									<a href="#" class="portfolio-link-left"><i class="fas fa-search"></i></a>
+									<a href="#" class="portfolio-link-right"><i class="fas fa-file-code"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio-item">
+							<img src="images/owl_slider/harley.jpg" alt="harley-davidson black-white">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-inner">
+									<h3>Harley-Davidson 1200 Custom </h3>
+									<p>Użyte technologie:</p>
+									<a href="#" class="portfolio-link-left"><i class="fas fa-search"></i></a>
+									<a href="#" class="portfolio-link-right"><i class="fas fa-file-code"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio-item">
+							<img src="images/owl_slider/bmwk1100.jpg" alt="bike bmw BMW K1100 cafe-racer-car-chrome">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-inner">
+									<h3>BMW K1100 - Cafe Racer</h3>
+									<p>Użyte technologie:</p>
+									<a href="#" class="portfolio-link-left"><i class="fas fa-search"></i></a>
+									<a href="#" class="portfolio-link-right"><i class="fas fa-file-code"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio-item">
+							<img src="images/owl_slider/bmwk100.jpg" alt="automotive bike blur bmw k100 cafe-racer">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-inner">
+									<h3>BMW K100 - Cafe Racer</h3>
+									<p>Użyte technologie:</p>
+									<a href="#" class="portfolio-link-left"><i class="fas fa-search"></i></a>
+									<a href="#" class="portfolio-link-right"><i class="fas fa-file-code"></i></a>
+								</div>
+							</div>
+						</div>	
+						<div class="portfolio-item">
+							<img src="images/owl_slider/harley2.jpg" alt="Harley-Davidson CVO Breakout ">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-inner">
+									<h3>Harley-Davidson CVO Breakout</h3>
+									<p>Użyte technologie:</p>
+									<a href="#" class="portfolio-link-left"><i class="fas fa-search"></i></a>
+									<a href="#" class="portfolio-link-right"><i class="fas fa-file-code"></i></a>
+								</div>
+							</div>
+						</div>																
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Section content -->
+		<div class="content-offer">
+			<div class="container"  data-animate="bounceIn">
+				<div class="section-title">
+						<h2>Nasza witryna przeszła całkowity remont</h2>
+						<p>Decyzją naszego zespołu było zaktulizowanie Naszej witryny, a to tylko po to, aby sprawić przyjemność klientom.</p>
+				</div>
+				<img src="images/desktop.png" alt="desktop">				
+			</div>
+		</div>
+
+		<!-- Section video -->
+		<div class="section-video">
+			<div id="movie" style="position:absolute">
+			</div>
+			<div class="video-line">
+				<div class="container">
+					<h2>Nasz najnowszy projekt</h2>
+					<a href="#" class="button">Zobacz więcej</a>
+				</div>
+			</div>
+			<div class="player" data-property="{videoURL:'T_h50xU6GSA',containment:'#movie',showControls:false,startAt:0,mute:true,autoPlay:true,loop:true,opacity:1}">
+			</div>
+		</div>
+
+		<!-- Contact after video -->
+		<div class="section-video-text">
+			<div class="container">
+				<h2>Kliknij, aby się skontaktować
+				<a href="#" class="button">Kliknij tutaj</a>
+				</h2>
+			</div>
+		</div>
+
+		<!-- Section advanteges -->
+		<div class="advanteges">
+			<div class="section-title">
+				<div class="container" data-animate="bounceIn">
+					<h2>Dlaczego warto wybrać Nas</h2>
+					<p>Sześć powodów, które zmotywują Ciebie do skorzystania z Naszych usług.</p>
+				</div>
+			</div>
+
+			<!-- Advanteges contents -->
+			<div class="advanteges-content">
+				<div class="container">
+					<!-- Advanteges - 1 -->
+					<div class="single-col" data-animate="fadeInLeft">
+						<span><i class="fas fa-file-code"></i></span>
+						<div class="services-content">
+							<h3>Nowoczesne techniki</h3>
+							<p>Uczymy się od najlepszych, systematycznie odbywamy szkolenia również za granicą.</p>
+						</div>
+					</div>
+					<!-- Advanteges - 2 -->
+					<div class="single-col" data-animate="fadeInUp">
+						<span><i class="fas fa-lightbulb"></i></span>
+						<div class="services-content">
+							<h3>Ciekawe projekty</h3>
+							<p>Adam - główny projektant, zadba aby Twój sprzęt wyróżniał się z tłumu.</p>
+						</div>
+					</div>
+					<!-- Advanteges - 3 -->
+					<div class="single-col" data-animate="fadeInRight">
+						<span><i class="fas fa-tools"></i></span>
+						<div class="services-content">
+							<h3>Prostsze rozwiazania</h3>
+							<p>Nasz wykwalifikowany zespół korzysta z najlepszych rozwiązań.</p>
+						</div>
+					</div>					
+					<!-- Advanteges - 4 -->
+					<div class="single-col" data-animate="fadeInLeft">
+						<span><i class="fas fa-comments"></i></span>
+						<div class="services-content">
+							<h3>Kontakt na najwyższym poziomie</h3>
+							<p>Będziemy stale w kontakcie, podczas gdy Twoj motocykl będzie w warsztacie.</p>
+						</div>
+					</div>
+					<!-- Advanteges - 5 -->
+					<div class="single-col" data-animate="fadeInUp">
+						<span><i class="fas fa-medkit"></i></span>
+						<div class="services-content">
+							<h3>Wsparcie</h3>
+							<p>Możesz liczyć na fachową opinie od ludzi z doświadczeniem.</p>
+						</div>
+					</div>
+					<!-- Advanteges - 6 -->
+					<div class="single-col" data-animate="fadeInRight">
+						<span><i class="fas fa-stopwatch"></i></span>
+						<div class="services-content">
+							<h3>Szybkość działania</h3>
+							<p>Wiemy jak bardzo cenny jest czas. Zrobimy wszystko, aby motocykl był szybko gotowy.</p>
+						</div>
+					</div>										
+				</div>
+			</div>
+		</div>
+
+		<!-- Section statistics -->
+		<div class="statistics">
+			<div class="container">
+				<div class="statistics-single-item single-col">
+					<div class="statistics-content">
+					<h3><span class="timer" data-from="0" data-to="475" dat-speed="5000"></span></h3>
+					<p>Zadowolonych klientów</p>
+					</div>
+				</div>
+				<div class="statistics-single-item single-col">
+					<div class="statistics-content">
+					<h3><span class="timer" data-from="0" data-to="26" dat-speed="5000"></span></h3>
+					<p>Zrealizowanych projektów</p>
+					</div>
+				</div>
+				<div class="statistics-single-item single-col">
+					<div class="statistics-content">
+					<h3><span class="timer" data-from="0" data-to="10" dat-speed="5000"></span></h3>
+					<p>Lat już jesteśmy przy Was</p>
+					</div>
+				</div>
+				<div class="statistics-single-item single-col">
+					<div class="statistics-content">
+					<h3><span class="timer" data-from="0" data-to="79" dat-speed="5000"></span></h3>
+					<p>Przejechanych kilometrów w tyś.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Section parallax -->
+		<div class="photo-banner">
+			<div class="photo-banner-inner">
+				<div class="container">
+					<h2>Sprawdź cennik usług</h2>
+					<a href="#" class="button">Zobacz</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Our team -->
+		<div class="our-team">
+			<div class="container">
+				<div class="section-title">
+					<h2>Nasz zespół</h2>
+					<p>Poznaj pracowników Custom Motorcycles</p>
+				</div>
+				<div class="team-members">
+					<!-- First person -->
+					<div class="team-member single-col" data-animate="bounceIn">
+						<img src="images/tomasz.png" alt="First member">
+						<div>
+							<h3>Marek Tomaszewski</h3>
+							<span>Mechanik</span>
+							<p>6 lat doświadczenia, uczył się od najlepszych ze słonecznej Kalifornii. Dziś, możesz go spotkać w Naszym warsztacie!</p>
+							<ul class="members-social">
+								<li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+								<li><a href="#" class="github"><i class="fab fa-github"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="team-member single-col" data-animate="bounceIn">
+						<img src="images/tomasz.png" alt="First member">
+						<div>
+							<h3>Dariusz Myszko</h3>
+							<span>Projektant</span>
+							<p>Nie ma lepszego człowieka od Darka na tym stanowisku! Gdy robi projekt na życzenie klienta, poświeca dzień i noc aby wszystko było idealnie!</p>
+							<ul class="members-social">
+								<li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+								<li><a href="#" class="github"><i class="fab fa-github"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="team-member single-col" data-animate="bounceIn">
+						<img src="images/tomasz.png" alt="First member">
+						<div>
+							<h3>Olaf Krzywousty</h3>
+							<span>Sprzedawca</span>
+							<p>Potrzebujesz pomocy w doborze części? a może odpowiedni rozmiar odzieży? Olaf tylko czeka na klientów żeby wykazać się praktyczną wiedzą!</p>
+							<ul class="members-social">
+								<li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+								<li><a href="#" class="github"><i class="fab fa-github"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Slider opinions -->
+		<div class="opinions">
+			<div class="container">
+				<div class="section-title" data-animate="bounceIn">
+					<h2>Opinie naszych klientów</h2>
+					<p>Oceny dotyczące naszego serwisu, są istotne dla Nas. Dlatego nie zapomnnij, po odwiedzeniu warsztatu wyrazić swoją opinię :)</p>
+				</div>
+				<div class="opinions-content" data-animate="fadeIn">
+					<ul class="bxslider" id="opinions-slider">
+						<li>
+							<p>Obsługa na najwyższym poziomie! Pan Marek szybko znalazł problem w moim Suzuki GN 125 i rozwiązał w szybkim czasie!</p>
+							<h3>Marek Piotrowski</h3>
+						</li>
+						<li>
+							<p>W każdym sezonie odwiedzam ten warsztat, aby mieć pewność, że wszystko jest tak, jak powinno być w moim motocyklu.</p>
+							<h3>Damian Kowalski</h3>
+						</li>
+												<li>
+							<p>Panowie bardzo mili, części za przyzwoitą cenę!</p>
+							<h3>Anastazja Banan</h3>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer  -->
+		<footer>
+			<div class="footer-main">
+				<div class="container">
+					<!-- Social -->
+					<div class="single-col">
+						<h3>O nas</h3>
+						<p>Jesteśmy na rynku już od 10-ciu lat, przez ten czas zdobyliśmy zaufanie dużej liczby klientów. Stale rozwijamy swoje umiejętności aby zaspokoić zapotrzebnowanie na rynku. Dodatkowo zajmujemy się sproawadzaniem części z USA do motocykli marki Harley Davidson. Wszelkie informacje odnośnie kosztów sprowadzenia, zależy od paramterów części itp. Dodatkowo posiadamy warsztat, w którym modyfikujemy/naprawiamy praktycznie każdej marki motocykl.</p>
+						<ul class="contact">
+							<li><strong>Godziny otwarcia:</strong> 8:00 - 16:00</li>
+							<li><strong>Adres:</strong> ul. Rynek 13, 50-029 Wrocław </li>
+							<li><strong>Telefon:</strong> 555-555-555</li>
+							<li><strong>E-mail:</strong> custom-moto@fake.com</li>
+						</ul>
+						<ul class="footer-social">
+							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+							<li><a href="#"><i class="fab fa-github"></i></a></li>
+							<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+							<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+						</ul>
+					</div>
+					<!-- Links -->
+					<div class="single-col footer-map">
+						<h3>Mapa dojazdu</h3>
+						<a href="https://goo.gl/maps/UCvZaVbTBcm"> <img src="images/mapa.png" alt="mapa"></a>
+					</div>	
+				</div>
+			</div>
+
+			<!-- Copyright -->
+			<div class="copyright">
+				<div class="container">
+					<p>Copyright 2019 &copy; <a href="#">BRN94</a></p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	</div>
+
+	<script>
+	$(document).ready(function(){
+		/* menu mobilne */
+		$('#main-menu').slicknav({
+			prependTo: '#attach-mobile-menu',
+			label: ''
+		});
+		/* CountTo */
+		$('.timer').countTo();
+		/* viewport */
+		$('*[data-animate]').addClass('hide').each(function(){
+			$(this).viewportChecker({
+				classToAdd: 'show animated ' + $(this).data('animate'),
+				classToRemove: 'hide',
+				offset: 200
+			});
+		});
+		/* YTPlayer*/
+		$('.player').YTPlayer();
+	});
+	$('#main-container').imagesLoaded(function(){
+		/* main slider */
+		$('#main-slider').bxSlider({
+			mode: 'fade',
+			auto: true,
+			controls: true,
+			pager: false
+		});
+		/* Slider opinions */
+		$('#opinions-slider').bxSlider({
+		mode: 'vertical',
+		auto: true,			
+		controls: false,
+		pager: false
+		});		
+		$('#portfolio-carousel').owlCarousel({
+			autoPlay: 10000,
+			items: 3,
+			itemsDesktopSmall: [1199,2],
+			itemsTablet: [768,1],
+		});
+	});
+
+	</script>
+</body>
+</html>
